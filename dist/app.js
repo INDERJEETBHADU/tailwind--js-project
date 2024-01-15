@@ -59,3 +59,71 @@ subbtn.addEventListener("click", function () {
     }
 
 })
+// checking---of--passwordd---strenghth____======
+
+let pass = "1sdfjejerhfhhehehhehhrehhefh"
+if (pass.length < 5) {
+    console.log("password is weak")
+} else if (pass.length > 6 && pass.length < 10) {
+    console.log("password is medium")
+}
+else {
+    console.log("password is strong")
+}
+
+
+// ticket--checking---age--based'''
+let age = 77;
+if (age <= 12) {
+    console.log("ticket is 5 dollar")
+}
+else if (age > 13 && age < 64) {
+    console.log("ticket is 10 dollar")
+}
+else {
+    console.log("ticket is 7 dollar")
+}
+
+// number---checkin---task
+let num1 = 2
+let num2 = 2
+let num3 = -4
+if (num1 + num2 + num3 < 0) {
+    console.log("number is negative")
+} else if (num1 + num2 + num3 > 0) {
+    console.log("number is positive")
+
+}
+else {
+    console.log("number is zero")
+}
+
+
+// BMI----check--task
+let BMI = 29.9
+
+if (BMI < 18.5) {
+    console.log("Underweight")
+}
+else if (BMI >= 18.5 && BMI <= 24.9) {
+    console.log("Normal weight")
+} else if (BMI >= 25 && BMI <= 29.9) {
+    console.log("Overweight")
+}
+else {
+    console.log("Obese")
+}
+
+
+// Palindrome---task--
+
+function isPalindrome(word) {
+    word = word.toLowerCase();
+    return word === word.split('').reverse().join('');
+}
+let names = "mama";
+if (isPalindrome(names)) {
+    console.log(names + " is a palindrome.");
+} else {
+    console.log(names + " is not a palindrome.");
+}
