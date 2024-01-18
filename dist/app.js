@@ -127,3 +127,12 @@ if (isPalindrome(names)) {
 } else {
     console.log(names + " is not a palindrome.");
 }
+
+
+// table--printing--task
+for (let i = prompt(Number); i <= Number; i++) {
+    for (let j = 1; j <= 10; j++) {
+        console.log(` ${i} * ${j} = ${i * j}`)
+    }
+    break
+}
