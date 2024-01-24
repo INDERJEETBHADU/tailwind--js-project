@@ -7,6 +7,11 @@
     <title>tailwind--jss--project</title>
     <link rel="stylesheet" href="./dist/output.css">
 </head>
+<style>
+.card {
+background-color: yellow;
+}
+</style>
 
 <body>
     <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
@@ -784,7 +789,57 @@
 
     <!-- timeline---ends---here -->
 
+    <!-- card--making-basic--with--js -->
+    <div id="cardcontainer"></div>
+    <script>
+        //     for (let i = ''; i <= 10; i++) {
+        //         for (let b = 1; b <= i; b++) {
+        //             document.write("*");
+        //         }
+        //         document.write("<br>")
 
+        //     }
+
+
+        //
+
+        // myarray.forEach(element => {
+        //     const cardelement = document.createElement("div")
+        //     cardelement.className = "card"
+        //     cardelement.innerHTML = `<h3>${element.name} </h3>
+        //     <p> ${element.age}</p>`
+        //     cardcontainer.appendChild(cardelement)
+
+        // });
+        const myarray = [{
+            name: "vishal",
+            age: 10,
+            gender: "male",
+            about: "frontend-developer",
+        },
+        {
+            name: "ritik",
+            age: 19,
+            gender: "male",
+            about: "frontend-developer"
+        }
+        ]
+        const cardcontainer = document.getElementById("cardcontainer")
+
+
+
+        for (let i = 0; i < myarray.length; i++) {
+            const cardelement = document.createElement("div")
+            cardelement.className = "card"
+            cardelement.innerHTML = `<h3>${myarray[i].name} </h3>
+                <p> ${myarray[i].age}</p>`;
+            cardcontainer.appendChild(cardelement)
+
+
+
+        }
+
+    </script>
 
 
 
